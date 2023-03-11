@@ -8,6 +8,7 @@
 # Cara Kerja
 
 - Transfer Service akan berkomunikasi dengan bank-management-service, transaction-management-service
+- Disini nanti ada folder integration, dimana isinya adalah dependency BankManagementService dan TransactionManagementService
 
 # Bank Management Service
 - mengambil data rekening asal dan rekening tujuan
