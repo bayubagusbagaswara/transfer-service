@@ -15,3 +15,6 @@
 
 # Transaction Management Service
 - untuk menyimpan riwayat transaksi nasabah
+
+
+# Cara Running
