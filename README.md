@@ -18,3 +18,7 @@
 
 
 # Cara Running
+- jadi harus running bareng antara processor dan model management service
+
+
+# Kita bikin dokumentasi menggunakan Swagger
