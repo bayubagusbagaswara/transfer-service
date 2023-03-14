@@ -26,36 +26,36 @@ public class SwaggerConfig {
     @Value(value = "${enabled.swagger:true}")
     private boolean enabledSwagger;
 
-    @Bean
-    public Docket api() {
-        var parameterBuilder = new ParameterBuilder();
-        parameterBuilder.name("Authorization")
-                .modelRef(new ModelRef("string"))
-                .parameterType("header")
-                .required(true)
-                .defaultValue("Bearer [token]")
-                .build();
-        List<Parameter> parameters = new ArrayList<>();
-        parameters.add(parameterBuilder.build());
-
-        var parameterBuilder2 = new ParameterBuilder();
-
-        parameterBuilder2.name("device_id")
-                .modelRef(new ModelRef("string"))
-                .parameterType("header")
-                .required(true)
-                .defaultValue("device id")
-                .build();
-
-        parameters.add(parameterBuilder2.build());
-
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build()
-                .globalOperationParameters(parameters)
-                .enable(enabledSwagger);
-    }
+//    @Bean
+//    public Docket api() {
+//        var parameterBuilder = new ParameterBuilder();
+//        parameterBuilder.name("Authorization")
+//                .modelRef(new ModelRef("string"))
+//                .parameterType("header")
+//                .required(true)
+//                .defaultValue("Bearer [token]")
+//                .build();
+//        List<Parameter> parameters = new ArrayList<>();
+//        parameters.add(parameterBuilder.build());
+//
+//        var parameterBuilder2 = new ParameterBuilder();
+//
+//        parameterBuilder2.name("device_id")
+//                .modelRef(new ModelRef("string"))
+//                .parameterType("header")
+//                .required(true)
+//                .defaultValue("device id")
+//                .build();
+//
+//        parameters.add(parameterBuilder2.build());
+//
+//        return new Docket(DocumentationType.SWAGGER_2)
+//                .select()
+//                .apis(RequestHandlerSelectors.any())
+//                .paths(PathSelectors.any())
+//                .build()
+//                .globalOperationParameters(parameters)
+//                .enable(enabledSwagger);
+//    }
 
 }
