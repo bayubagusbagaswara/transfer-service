@@ -22,3 +22,5 @@
 
 
 # Kita bikin dokumentasi menggunakan Swagger
+
+- setting dokumentasi yang sederhana
